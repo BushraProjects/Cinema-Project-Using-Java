@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="1000.0" prefWidth="1771.0" style="-fx-background-color: #B22222;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.movie4Controller">
+   <children>
+      <Pane layoutX="6.0" layoutY="8.0" prefHeight="88.0" prefWidth="1927.0" style="-fx-background-color: #ffffff67 #ffffff67;">
+         <children>
+            <ImageView fitHeight="84.0" fitWidth="108.0" layoutX="29.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../media/logo%20m.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="1776.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#back" prefHeight="47.0" prefWidth="116.0" stylesheets="@application.css" text="Back" textFill="#44aba6">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <ImageView fx:id="selectedFilmPoster" fitHeight="905.0" fitWidth="640.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/a3592c14441793.5628410d66e08.jpg" />
+         </image>
+      </ImageView>
+      <Text fx:id="title" fill="#d1e403" layoutX="900.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MARY POPPJINS" wrappingWidth="353.2851527631283">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Text fx:id="description" fill="#85daf2" layoutX="724.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description:&#10;Mary Poppins is a 1964 American musical fantasy film directed by Robert Stevenson and produced by Walt Disney, with songs written and composed by the Sherman Brothers. The screenplay is by Bill Walsh and Don DaGradi, based on P. L. Travers's book series Mary Poppins.&#10;&#10;Budget: $4.4–6 million&#10;Music by: Richard M. Sherman (songs), Robert B. Sherman (songs), Irwin Kostal (score)&#10;Release date: August 27, 1964&#10;Produced by: Walt Disney" textAlignment="JUSTIFY" wrappingWidth="725.28515625">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="934.0" fitWidth="414.0" layoutX="1519.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/d0d6647f96b21836897b35c584d8c829.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="669.0" layoutY="826.0" mnemonicParsing="false" onMouseClicked="#bookNow" prefHeight="84.0" prefWidth="751.0" stylesheets="@application.css" text="Book Now" textFill="#44aba6">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Text fill="#85daf2" layoutX="722.0" layoutY="706.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="startDate" fill="#85daf2" layoutX="1320.0" layoutY="705.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fri 30 Jun">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#85daf2" layoutX="722.0" layoutY="673.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Times:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="time" fill="#85daf2" layoutX="1320.0" layoutY="672.0" strokeType="OUTSIDE" strokeWidth="0.0" text="21:00 - 23:30">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

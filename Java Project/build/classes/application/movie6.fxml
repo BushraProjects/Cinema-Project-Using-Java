@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="1000.0" prefWidth="1771.0" style="-fx-background-color: #B22222;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.movie6Controller">
+   <children>
+      <Pane layoutX="6.0" layoutY="8.0" prefHeight="88.0" prefWidth="1927.0" style="-fx-background-color: #ffffff67 #ffffff67;">
+         <children>
+            <ImageView fitHeight="84.0" fitWidth="108.0" layoutX="29.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../media/logo%20m.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="1776.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#back" prefHeight="47.0" prefWidth="116.0" stylesheets="@application.css" text="Back" textFill="#44aba6">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <ImageView fx:id="selectedFilmPoster" fitHeight="905.0" fitWidth="640.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/the-vampire-diaries-5564630e45e13.jpg" />
+         </image>
+      </ImageView>
+      <Text fx:id="title" fill="#d1e403" layoutX="900.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Vampire Diaries" wrappingWidth="353.2851527631283">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Text fx:id="description" fill="#85daf2" layoutX="724.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description:&#10;The Vampire Diaries is an American supernatural teen drama television series developed by Kevin Williamson and Julie Plec, based on the popular book series of the same name written by L. J. Smith. The series premiered on The CW on September 10, 2009 and concluded on March 10, 2017 airing 171 episodes over eight seasons.&#10;&#10;No. of seasons: 8&#10;No. of episodes: 171 (list of episodes)&#10;Original release: September 10, 2009 –, March 10, 2017&#10;Original network: The CW" textAlignment="JUSTIFY" wrappingWidth="736.28515625">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="934.0" fitWidth="414.0" layoutX="1519.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/d0d6647f96b21836897b35c584d8c829.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="669.0" layoutY="826.0" mnemonicParsing="false" onMouseClicked="#bookNow" prefHeight="84.0" prefWidth="751.0" stylesheets="@application.css" text="Book Now" textFill="#44aba6">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Text fill="#85daf2" layoutX="722.0" layoutY="706.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="startDate" fill="#85daf2" layoutX="1320.0" layoutY="705.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mon 26 Jun">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#85daf2" layoutX="722.0" layoutY="673.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Times:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="time" fill="#85daf2" layoutX="1320.0" layoutY="672.0" strokeType="OUTSIDE" strokeWidth="0.0" text="09:00 - 11:30">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

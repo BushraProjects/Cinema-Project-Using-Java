@@ -1,0 +1,21 @@
+---------------------------------For Creating Schema--------------------------------
+CREATE SCHEMA `ticketbooking` ;
+
+
+--------------------------------For Creating the Tables-----------------------------
+CREATE TABLE `ticketbooking`.`ticketbooking` (
+  `ID` INT(11) NOT NULL AUTO_INCREMENT,
+  `username` VARCHAR(45) NOT NULL,
+  `email` VARCHAR(45) NOT NULL,
+  `password` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`ID`));
+
+
+CREATE TABLE `ticketbooking`.`bookings` (
+  `ID` INT(11) NOT NULL AUTO_INCREMENT,
+  `Email` VARCHAR(45) NOT NULL,
+  `Username` VARCHAR(45) NOT NULL,
+  `Movie` VARCHAR(45) NOT NULL,
+  `Date` VARCHAR(45) NOT NULL,
+  `Time` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`ID`));

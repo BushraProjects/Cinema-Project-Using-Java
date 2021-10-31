@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="1000.0" prefWidth="1771.0" style="-fx-background-color: #B22222;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.movie7Controller">
+   <children>
+      <Pane layoutX="6.0" layoutY="8.0" prefHeight="88.0" prefWidth="1927.0" style="-fx-background-color: #ffffff67 #ffffff67;">
+         <children>
+            <ImageView fitHeight="84.0" fitWidth="108.0" layoutX="29.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../media/logo%20m.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="1776.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#back" prefHeight="47.0" prefWidth="116.0" stylesheets="@application.css" text="Back" textFill="#44aba6">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <ImageView fx:id="selectedFilmPoster" fitHeight="905.0" fitWidth="640.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/harry-potter-and-the-deathly-hallows-part-1-5776d8131a8c3.jpg" />
+         </image>
+      </ImageView>
+      <Text fx:id="title" fill="#d1e403" layoutX="900.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Harry Potter" textAlignment="CENTER" wrappingWidth="353.2851527631283">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Text fx:id="description" fill="#85daf2" layoutX="724.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description:&#10;Harry Potter is a series of fantasy novels written by British author J. K. Rowling. The novels chronicle the lives of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry.&#10;&#10;Published: 26 June 1997 – 21 July 2007 (initial publication)&#10;Genre: Fantasy, drama, young adult fiction, mystery, thriller, Bildungsroman&#10;Author: J. K. Rowling&#10;Publisher: Bloomsbury Publishing (UK), Pottermo" textAlignment="JUSTIFY" wrappingWidth="750.9999761134386">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="934.0" fitWidth="414.0" layoutX="1519.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/d0d6647f96b21836897b35c584d8c829.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="669.0" layoutY="826.0" mnemonicParsing="false" onMouseClicked="#bookNow" prefHeight="84.0" prefWidth="751.0" stylesheets="@application.css" text="Book Now" textFill="#44aba6">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Text fill="#85daf2" layoutX="722.0" layoutY="706.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="startDate" fill="#85daf2" layoutX="1320.0" layoutY="705.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wed 28 Jun">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#85daf2" layoutX="722.0" layoutY="673.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Times:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="time" fill="#85daf2" layoutX="1320.0" layoutY="672.0" strokeType="OUTSIDE" strokeWidth="0.0" text="21:00 - 23:30">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
